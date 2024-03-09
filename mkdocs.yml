@@ -1,0 +1,93 @@
+site_name: Sydni Frisch 
+
+# Theme Configuration 
+
+theme:
+  name: material
+  logo: assets/logo.jpg
+  icon:
+    edit: material/pencil-box-multiple
+    view: material/file-eye
+    repo: fontawesome/brands/github
+  font:
+    text: DM Sans
+    code: JetBrains Mono
+  palette: 
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: light blue
+      accent: teal
+      toggle:
+        icon: material/lightbulb-off
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: light blue
+      accent: teal
+      toggle:
+        icon: material/lightbulb-on
+        name: Switch to light mode
+
+  icon:
+    annotation: material/lightning-bolt-outline
+    
+
+  features:
+    - navigation.tabs
+    - toc.follow
+    - navigation.top
+    - navigation.path
+    - navigation.footer
+    - content.code.copy
+    - content.tooltips
+
+# Plugin Configuration
+
+plugins:
+  - search
+
+# Extension Configuration
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - abbr
+
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: simple/youtube
+      link: https://www.youtube.com/@heartofnarnia8739
+      name: HeartofNarnia on Youtube
+    - icon: simple/instagram
+      link: https://www.instagram.com/narniaheroes/?hl=en
+      name: NarniaHeros on Instagram
+    - icon: simple/linkedin
+      link: https://www.linkedin.com/in/sydnifrisch?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
+      name: Me on LinkedIn
+
